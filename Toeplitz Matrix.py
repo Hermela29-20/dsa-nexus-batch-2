@@ -4,8 +4,8 @@ class Solution(object):
           b=len(matrix[0])
           for i in range(a-1):
             for j in range(b-1):
-                if matrix[i][j]==matrix[i+1][j+1]:
-                    return True
-          return False
+                if matrix[i][j]!=matrix[i+1][j+1]:
+                    return False
+          return True
 
         
